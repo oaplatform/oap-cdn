@@ -1,0 +1,9 @@
+services:
+  cdn:
+    service: oap-cdn-ws
+    profiles:
+      - oap-cdn-ws
+    protocol: HTTP
+    sessionAware: true
+interceptors:
+  - security-interceptor

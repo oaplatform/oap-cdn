@@ -1,0 +1,9 @@
+name: oap-cdn-ws
+dependsOn:
+  - oap-ws
+  - oap-ws-sso
+services:
+  oap-cdn-ws:
+    profile: oap-cdn-ws
+    implementation: oap.cdn.ws.CdnWS
+    parameters: "@service:oap-cdn-service"

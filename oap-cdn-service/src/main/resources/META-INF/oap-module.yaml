@@ -1,0 +1,5 @@
+name: oap-cdn-service
+services:
+  oap-cdn-service:
+    profile: oap-cdn-service
+    implementation: oap.cdn.service.file.FileCdnService
